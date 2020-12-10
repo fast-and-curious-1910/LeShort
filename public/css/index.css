@@ -11,6 +11,7 @@ body {
 header h1 {
     margin: 1rem;
     text-align: center;
+    text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
 }
 #app{
     width: 60%;
@@ -28,7 +29,8 @@ body {
 input, textarea, button, p, div, section, article, select {
   display: 'block';
   width: 100%;
-  font-family: sans-serif;
+  color: #222;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1em;
   margin: 0.5em;
 }
