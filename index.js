@@ -56,7 +56,7 @@ app.post('/url', slowDown({
       slug,
       url,
     });
-    if (url.includes(process.env.HEROKu_URL)) {
+    if (url.includes('bit.ly')) {
       throw new Error('dang your iq is -100 X No Of Errors while Building This');
     }
     if (!slug) {
