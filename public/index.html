@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeShort</title>
+    <link rel="stylesheet" href="css/index.css">
+    <h1>LeShort - URL Shortner By Palash Sureka</h1>
+</head>
+<body>
+    <noscript>You need javascript to run this app</noscript>
+
+    <main id='app'>
+        <form @submit.prevent='createUrl()'> 
+            <label for='url'>URL To Be Shortned</label>
+            <input v-model='url' id="url" name="url">
+            <label for="slug">Slug To Be Used (Leave For Random)</label>
+            <input v-model='slug' id="slug" name="slug">
+            <button type="submit">Create</button>
+        </form>
+        <pre v-if='created'> 
+            {{JSON.stringify(created,null,2)}}
+        </pre>
+    </main>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
