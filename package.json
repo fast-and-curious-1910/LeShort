@@ -9,6 +9,11 @@
     },
   "author": "Palash Sureka",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fast-and-curious-1910/LeShort.git"
+  },
+  "readme": "README.md",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
